@@ -56,3 +56,18 @@ class DBService:
         db.commit()
         db.refresh(db_reminder)
         return db_reminder
+    
+    @staticmethod
+    def update_ticket_status(db: Session, ticket_id: str, current_status: str) -> TicketModel:
+        """
+        Looks up a student grievance ticket by its custom alphanumeric tracking key 
+        and updates its operational state.
+        """
+        db_ticket = db.query(TicketModel).filter(TicketModel.ticket_id == ticket_id).first()
+        if not db_ticket:
+            return None
+            
+        db_ticket.status = current_status
+        db.commit()
+        db.refresh(db_ticket)
+        return db_ticket

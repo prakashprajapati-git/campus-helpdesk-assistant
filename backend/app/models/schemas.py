@@ -103,3 +103,7 @@ class ChatResponse(BaseModel):
     agent: str
     confidence: float
     sources: Optional[list] = []
+    
+# Ticket Administrative Modification Schema
+class TicketUpdate(BaseModel):
+    status: str  # e.g., "In Progress", "Resolved", "Closed"
