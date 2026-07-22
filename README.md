@@ -548,8 +548,8 @@ Their tools and documentation made this project possible.
 
 **Prakash Kumar Prajapati**
 
-- GitHub: https://github.com/prakashprajapati-git
-- LinkedIn: *(Add your LinkedIn profile URL here)*
+- GitHub: [prakashprajapati-git](https://github.com/prakashprajapati-git)
+- LinkedIn: [Prakash Kumar Prajapati](https://linkedin.com/in/prakash-kumar-prajapati-026101306)
 
 ---
 
